@@ -62,9 +62,10 @@ img.img-responsive {
 }
 
 div#Corpo {
-    min-height: 100%;
+    height: 85%;
+    width: 90%;
     position: absolute;
-    margin: 10px 20px;    
+    margin: 10px 20px;   
 }
 
 div#home {
@@ -98,6 +99,10 @@ div#home {
     padding: 5px;
     box-shadow:  10px 10px 10px 0px gray;
     padding-bottom: 10px;
+}
+
+.card-body {
+    padding-bottom: 50px;
 }
 
 img.card-img-top {
