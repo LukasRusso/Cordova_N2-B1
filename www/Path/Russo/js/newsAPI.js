@@ -50,8 +50,7 @@ function getArticles(){
 
 
     $.ajax({url: htmlRoute, method: "GET"})
-        .done(function(response) {
-            console.log(response);
+        .done(function(response) {            
             var data = response;
 
             if(response.status == "OK"){
