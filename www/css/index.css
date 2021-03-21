@@ -63,8 +63,8 @@ img.img-responsive {
 
 div#Corpo {
     min-height: 100%;
-    position: relative;
-    margin: 10px 20px;
+    position: absolute;
+    margin: 10px 20px;    
 }
 
 div#home {
@@ -91,7 +91,7 @@ div#home {
 }
 
 .card {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
     border: 2px black solid;
     border-radius: 10px;
