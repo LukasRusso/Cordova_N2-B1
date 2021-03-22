@@ -1,62 +1,73 @@
-function getCorpo(){
-    return document.getElementById("Corpo");
+function getCorpo() {
+  return document.getElementById("Corpo");
 }
 
-function getList(){
-    return document.getElementById("list");
+function getList() {
+  return document.getElementById("list");
 }
 
-function News(){
-    var list = getList()
-    list.innerHTML = "";
-    var corpo = getCorpo();    
-    corpo.innerHTML = "";
+function News() {
+  var list = getList();
+  list.innerHTML = "";
+  var corpo = getCorpo();
+  corpo.innerHTML = "";
 
-    $.ajax("./Path/Russo/news.html").done(function(data) {
-        $("#Corpo").html(data);
-    });
-    
-    var logo = document.getElementById("logo");
-    logo.setAttribute("src", "./img/NYT_logo.png");    
+  $.ajax("./Path/Russo/news.html").done(function (data) {
+    $("#Corpo").html(data);
+  });
 
-    var routes = ["Articles", "Business","Food", "Health", "Home"];
+  var logo = document.getElementById("logo");
+  logo.setAttribute("src", "./img/NYT_logo.png");
 
-    routes.forEach(element => {
-        var li = document.createElement("li");        
-        var a = document.createElement("a");
-        a.setAttribute("onclick", "get" + element + "()");
-        a.innerHTML = element;
-        a.href = "#";
+  var routes = ["Articles", "Business", "Food", "Health", "Home"];
 
-        li.appendChild(a);
-        list.appendChild(li);
-    })
+  routes.forEach((element) => {
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.setAttribute("onclick", "get" + element + "()");
+    a.innerHTML = element;
+    a.href = "#";
+
+    li.appendChild(a);
+    list.appendChild(li);
+  });
 }
 
-function Music(){
-    var list = getList()
-    list.innerHTML = "";
-    var corpo = getCorpo();
-    corpo.innerHTML = "";
+function Music() {
+  var list = getList();
+  list.innerHTML = "";
+  var corpo = getCorpo();
+  corpo.innerHTML = "";
 
-    corpo.innerHTML = "Music";  
+  const search = document.querySelector("#search");
+  const searchButton = document.querySelector("#search-button");
 
+  var logo = document.getElementById("logo");
+  logo.setAttribute("src", "./img/music.png");
+
+  $.ajax("./Path/Music/music.html").done(function (data) {
+    $("#Corpo").html(data);
+  });
+
+  searchButton.addEventListener("click", function () {
+    searchData(search.value);
+  });
 }
 
-function Games(){
-    var list = getList()
-    list.innerHTML = "";
-    var corpo = getCorpo();
-    corpo.innerHTML = "";
+function Games() {
+  var list = getList();
+  list.innerHTML = "";
+  var corpo = getCorpo();
+  corpo.innerHTML = "";
 
-    corpo.innerHTML = "Games";    
+  corpo.innerHTML = "Games";
 }
 
-function Books(){
-    var list = getList()
-    list.innerHTML = "";
-    var corpo = getCorpo();
-    corpo.innerHTML = "";
+function Books() {
+  var list = getList();
+  list.innerHTML = "";
+  var corpo = getCorpo();
+  corpo.innerHTML = "";
 
-    corpo.innerHTML = "Books";    
+  corpo.innerHTML = "Books";
 }
