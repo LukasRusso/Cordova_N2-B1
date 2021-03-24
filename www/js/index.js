@@ -70,4 +70,24 @@ function Books() {
   corpo.innerHTML = "";
 
   corpo.innerHTML = "Books";
+
+  $.ajax("./Path/Alessandra/index.html").done(function (data) {
+    $("#Corpo").html(data);
+  });
+
+  var logo = document.getElementById("logo");
+  logo.setAttribute("src", "./img/logoBook.png");
+
+  var routes = ["All Books", "Where Buy", "New One"];
+  routes.forEach((element) => {
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.setAttribute("onclick", "get" + element.replace(' ','_') + "()");
+    a.innerHTML = element;
+    a.href = "#";
+
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+
 }
