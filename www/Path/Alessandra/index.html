@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/book.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
     <script src="./Path/Alessandra/js/api.js"></script> 
   </head>
   <body>  
     <div id ="apresentacao">
-      <h1>The New York Times Best Seller Rank</h1>
+      <h1 class ="titleAp">The New York Times Best Seller Rank</h1>
       <br>
-      <blockquote>"A The New York Times Best Seller 
-        list is widely considered the most prominent bestseller list in the United States."
-      </blockquote>
-      <img src= "img/rank.png" alt="Image of rank" width="250" height="250">
       <ol>
-        <li>Consult the first three Best Seller here: </li>
         <li>
+          <blockquote class="description">"A The New York Times Best Seller 
+            list is widely considered the most prominent bestseller list in the United States."
+          </blockquote>
+        </li>
+        <li>
+          <img class="img-rank" src= "img/rank.png" alt="Image of rank" width="250" height="250">
+        </li>
+        <li class = "center_label">
+          <label>Consult the first three Best Seller here: </label>
           <button onclick = "get3Books()">
             <img src="img/NYT_logo.png" class="img-responsive">                   
-          </button>     
+          </button>
         </li>
-      </ol>
+        </ol>  
+        <hr>
     </div>
-    <div id="cardList"></div>
+    <div id="whereBuy"></div>
+    <div id="cardList" class="listCard"></div>
   </body>
 </html>
 

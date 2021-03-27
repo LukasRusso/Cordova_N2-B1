@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+    position: inherit;
+}
+
+body {    
+    height: 100%;
+    width: 100%;
+    background: #A4DCF8;
+    background: -webkit-linear-gradient(top left, #A4DCF8, #B2EBD6);
+    background: -moz-linear-gradient(top left, #A4DCF8, #B2EBD6);
+    background: linear-gradient(to bottom right, #A4DCF8, #B2EBD6);
+}
+div.listCard li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+div.listCard li a {
+    color: #000000;
+}
+
+.card {
+    margin-bottom: 50px;
+    text-align: center;
+    border: 10px rgb(206, 226, 231) solid;
+    border-radius:0px 90px 0px 90px;
+    padding: 5px;
+    box-shadow:  10px 10px 10px 0px gray;
+    padding-bottom: 10px;
+    background-color:#c6ebf5;
+}
+
+.card-body {
+    padding-bottom: 50px;
+}
+
+.card p{
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #000000;
+}
+
+img.card-img-top {
+    max-width: 100%;
+    max-height:100%;
+    margin-top: 50px;
+    border: 0.1px rgb(53, 52, 52) solid;
+}
+
+img.img-rank{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height:100%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.center_label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+h1.titleAp{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote.description{
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+div.header-search{
+    display: none;
+}

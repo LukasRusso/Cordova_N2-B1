@@ -1,4 +1,6 @@
-function createCard(rank,title, description,buy)
+
+
+function createCard(rank,title, description,buy,image)
 {
     var card = document.createElement("div");
     card.className = "card";
@@ -12,7 +14,7 @@ function createCard(rank,title, description,buy)
     cardRank.innerHTML = rank;
 
     //Nome do livro
-    var cardTitle = document.createElement("h5");
+    var cardTitle = document.createElement("h2");
     cardTitle.className = "card-title";
     cardTitle.innerHTML = title;
     cardTitle.style = "font-weight: bold";
@@ -27,14 +29,33 @@ function createCard(rank,title, description,buy)
     cardBuy.className = "card-rank";
     cardBuy.innerHTML = buy;
 
+    var cardImg = document.createElement("img");
+    cardImg.className = "card-img-top";
+    cardImg.src = image;
+
     cardBody.appendChild(cardRank);
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardText);
     cardBody.appendChild(cardBuy);
     
+    card.appendChild(cardImg);
     card.appendChild(cardBody);
 
     return card;
+}
+
+function createListBuy (title,link)
+{
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.setAttribute("onclick",link);
+    a.innerHTML = title;
+    a.href = link;
+    a.target = "_blank";
+
+    li.appendChild(a);
+    
+    return li
 }
 
 function getCardList()
@@ -44,7 +65,7 @@ function getCardList()
 
 //Recupera os 3 primeiros livros
 function get3Books()
-{
+{ 
     var cardList = getCardList();
     cardList.innerHTML = "";
 
@@ -57,10 +78,11 @@ function get3Books()
            { 
                 cardList.appendChild(
                     createCard(
+                        "",
                         response.results.books[i].rank,
-                        response.results.books[i].title,
                         response.results.books[i].description,
-                        response.results.books[i].buy_links[0].url,
+                        "",
+                        response.results.books[i].book_image
                     )
                 )
             };
@@ -72,8 +94,8 @@ function get3Books()
 function getAll_Books()
 {
     //Apaga a area de apresentação
-    document.getElementById('apresentacao')?document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
-  
+    document.getElementById('apresentacao')? document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
+
     var cardList = getCardList();
     cardList.innerHTML = "";
 
@@ -86,10 +108,11 @@ function getAll_Books()
            { 
                 cardList.appendChild(
                     createCard(
+                        "",                        
                         dado.rank,
-                        dado.title,
                         dado.description,
-                        ""
+                        "",
+                        dado.book_image
                     )
                 )
             };
@@ -101,8 +124,8 @@ function getAll_Books()
 function getWhere_Buy()
 {
     //Apaga a area de apresentação
-    document.getElementById('apresentacao')?document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
-  
+    document.getElementById('apresentacao')? document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
+    
     var cardList = getCardList();
     cardList.innerHTML = "";
 
@@ -111,9 +134,10 @@ function getWhere_Buy()
     {            
         if(response.status == "OK")
         {
-            for (let i=0 ; i<3 ;i++)
+            for (let i of response.results.books)
             { 
-              //Criar uma tabela com a lista de lugares   
+              //Criar uma  lista de lugares para comprar cada book
+                cardList.appendChild(createListBuy(i.title,i.buy_links[0].url));
             }
         }
     })       
@@ -123,8 +147,8 @@ function getWhere_Buy()
 function getNew_One()
 {
     //Apaga a area de apresentação
-    document.getElementById('apresentacao')?document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
-  
+    document.getElementById('apresentacao')? document.getElementById('apresentacao').remove():document.getElementById('apresentacao');
+
     var cardList = getCardList();
     cardList.innerHTML = "";
 
@@ -142,7 +166,8 @@ function getNew_One()
                             response.results.books[i].rank,
                             response.results.books[i].title,
                             response.results.books[i].description,
-                            response.results.books[i].buy_links[0].url,
+                            "",
+                            response.results.books[i].book_image
                         )
                     )
                 }
