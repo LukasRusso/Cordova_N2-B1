@@ -57,10 +57,22 @@ function Music() {
 function Games() {
   var list = getList();
   list.innerHTML = "";
-  var corpo = getCorpo();
-  corpo.innerHTML = "";
-
+  var corpo = getCorpo();  
   corpo.innerHTML = "Games";
+
+  const search = document.querySelector("#search");
+  const searchButton = document.querySelector("#search-button");
+
+  $.ajax("./Path/Helio/index.html").done(function (data) {
+    $("#Corpo").html(data)
+  });
+
+  var logo = document.getElementById("logo");
+  logo.setAttribute("src", "./img/kakashi.png");
+
+  searchButton.addEventListener("click", function () {
+    searchJob(search.value);
+  });
 }
 
 function Books() {
