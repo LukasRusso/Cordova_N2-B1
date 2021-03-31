@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+    position: inherit;
+}
+
+body {    
+    height: 100%;
+    width: 100%;
+    background: #A4DCF8;
+    background: -webkit-linear-gradient(top left, #A4DCF8, #B2EBD6);
+    background: -moz-linear-gradient(top left, #A4DCF8, #B2EBD6);
+    background: linear-gradient(to bottom right, #A4DCF8, #B2EBD6);
+}
