@@ -1,0 +1,24 @@
+div.header-search #search, div.header-search #search-button{
+    display: none;
+}
+
+h1.titleAp{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.img-news {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

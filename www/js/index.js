@@ -11,6 +11,8 @@ function News() {
   list.innerHTML = "";
   var corpo = getCorpo();
   corpo.innerHTML = "";
+  var search = document.getElementsByClassName("header-search")[0];
+  
 
   $.ajax("./Path/Russo/news.html").done(function (data) {
     $("#Corpo").html(data);

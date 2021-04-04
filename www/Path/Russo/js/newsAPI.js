@@ -54,7 +54,7 @@ function getArticles(){
             var data = response;
 
             if(response.status == "OK"){
-                data.response.docs.forEach(element => {                    
+                data.response.docs.forEach(element => {                                      
                     cardList.appendChild(
                         createCard(
                             "https://static01.nyt.com/" + element.multimedia[0].url,
@@ -112,13 +112,13 @@ function getFood(){
             var data = response;
 
             if(response.status == "OK"){
-                data.results.forEach(element => {                    
+                data.results.forEach(element => {                                        
                     cardList.appendChild(
                         createCard(
                             element.multimedia[0].url,
                             element.title,
                             element.abstract,
-                            element.web_url
+                            element.url
                         )
                     )
                 });
