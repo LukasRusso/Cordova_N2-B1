@@ -6,7 +6,7 @@ Está é uma aplicação feita em HTML5, CSS3, JavaScript e Ajax.
 Foi utilizado o Cordova para a construção da aplicação em apk.
 E foi criado 4 features para esse projeto.
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg =200x300)
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg" alt="Página Principal" style="width:200; height:300;"> 
 
 # Features
 
