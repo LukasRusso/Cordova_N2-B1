@@ -17,7 +17,7 @@ function News() {
   });
 
   var logo = document.getElementById("logo");
-  logo.setAttribute("src", "img/NYT_logo.png");
+  logo.setAttribute("src", "./img/NYT_Logo.png");
 
   var routes = ["Articles", "Business", "Food", "Health", "Home"];
 
@@ -42,7 +42,7 @@ function Music() {
   const search = document.querySelector("#search");
   const searchButton = document.querySelector("#search-button");
 
-  var logo = document.getElementById("logo");
+  var logo = document.getElementById("logo");  
   logo.setAttribute("src", "./img/music.png");
 
   $.ajax("./Path/Music/music.html").done(function (data) {
