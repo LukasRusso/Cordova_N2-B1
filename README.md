@@ -6,7 +6,7 @@ Está é uma aplicação feita em HTML5, CSS3, JavaScript e Ajax.
 Foi utilizado o Cordova para a construção da aplicação em apk.
 E foi criado 4 features para esse projeto.
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg)
+![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg =200x300)
 
 # Features
 
@@ -20,22 +20,22 @@ E foi criado 4 features para esse projeto.
     * "Health"
     * "Home"
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage.jpg)
-![Página com Busca](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage2.jpg)
+![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage.jpeg =200x300)
+![Página com Busca](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage2.jpeg =200x300)
 
 ## Music
 
 * Realiza a busca na API do [The Audio DB](https://www.theaudiodb.com/api_guide.php)
 * Onde é possivel realizar a busca de informações de sua banda preferida.
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/musicPage.jpg)
+![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/musicPage.jpeg =200x300)
 
 ## Anime
 
 * Realiza a busca na API do [Animechan](https://github.com/RocktimSaikia/anime-chan)
 * Onde é possivel realizar a busca de informações de seu Animes.
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/animePage.jpg)
+![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/animePage.jpeg =200x300)
 
 ## Books
 
@@ -45,5 +45,5 @@ E foi criado 4 features para esse projeto.
     * "Where Buy"
     * "New One"
 
-![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage.jpg)
-![Página com Busca](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage2.jpg)
+![Página Principal](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage.jpeg =200x300)
+![Página com Busca](https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage2.jpeg =200x300)
