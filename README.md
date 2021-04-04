@@ -6,7 +6,7 @@ Está é uma aplicação feita em HTML5, CSS3, JavaScript e Ajax.
 Foi utilizado o Cordova para a construção da aplicação em apk.
 E foi criado 4 features para esse projeto.
 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
 
 # Features
 
@@ -20,22 +20,22 @@ E foi criado 4 features para esse projeto.
     * "Health"
     * "Home"
 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage2.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/newsPage2.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
 
 ## Music
 
 * Realiza a busca na API do [The Audio DB](https://www.theaudiodb.com/api_guide.php)
 * Onde é possivel realizar a busca de informações de sua banda preferida.
 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/musicPage.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/musicPage.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
 
 ## Anime
 
 * Realiza a busca na API do [Animechan](https://github.com/RocktimSaikia/anime-chan)
 * Onde é possivel realizar a busca de informações de seu Animes.
 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/animePage.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/animePage.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
 
 ## Books
 
@@ -45,6 +45,6 @@ E foi criado 4 features para esse projeto.
     * "Where Buy"
     * "New One"
 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage.jpg" alt="Página Principal" style="width:200px; height:350px;"> 
-<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage2.jpg" alt="Página com Busca" style="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage.jpg" alt="Página Principal" styles="width:200px; height:350px;"> 
+<img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/booksPage2.jpg" alt="Página com Busca" styles="width:200px; height:350px;"> 
 
