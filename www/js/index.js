@@ -11,15 +11,13 @@ function News() {
   list.innerHTML = "";
   var corpo = getCorpo();
   corpo.innerHTML = "";
-  var search = document.getElementsByClassName("header-search")[0];
-  
 
   $.ajax("./Path/Russo/news.html").done(function (data) {
     $("#Corpo").html(data);
   });
 
   var logo = document.getElementById("logo");
-  logo.setAttribute("src", "./img/NYT_logo.png");
+  logo.setAttribute("src", "img/NYT_logo.png");
 
   var routes = ["Articles", "Business", "Food", "Health", "Home"];
 
