@@ -6,6 +6,8 @@ Está é uma aplicação feita em HTML5, CSS3, JavaScript e Ajax.
 Foi utilizado o Cordova para a construção da aplicação em apk.
 E foi criado 4 features para esse projeto.
 
+A apk encontra-se em [www/app-release-unsigned.apk](https://github.com/LukasRusso/Cordova_N2-B1/tree/master/www)
+
 <p align="center">
     <img src="https://github.com/LukasRusso/Cordova_N2-B1/blob/master/www/imgReadme/homePage.jpg" alt="Página Principal" width="200" height="350"> 
 </p>
